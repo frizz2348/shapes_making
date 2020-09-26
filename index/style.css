@@ -149,4 +149,22 @@ body {
     background-color: red;
     border-radius: 50%; }
 
+.cre {
+  height: 200px;
+  width: 200px;
+  background-color: #3120ca;
+  border-radius: 50%;
+  position: relative;
+  margin: 150px auto 0;
+  z-index: 1; }
+  .cre:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    bottom: 81px;
+    left: 0;
+    background-color: #aa48eb;
+    border-radius: 50%; }
+
 /*# sourceMappingURL=style.css.map */

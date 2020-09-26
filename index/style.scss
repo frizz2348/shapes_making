@@ -180,3 +180,23 @@ body {
        // margin-left: 40%;
     }
 }
+
+.cre {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(49, 32, 202);
+    border-radius: 50%;
+    position: relative;
+    margin: 150px auto 0;
+    z-index: 1;
+    &:before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        bottom: 81px;
+        left: 0;
+        background-color: $bg-color;
+        border-radius: 50%;
+    }
+}
