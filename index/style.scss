@@ -6,7 +6,7 @@
 $font-weights: 700;
 $text-size: 25px;
 $text-color: white;
-$bg-color: rgb(170, 72, 235);
+$bg-color: rgb(3, 3, 3);
 
 h1 {
     text-align: center;
@@ -14,15 +14,16 @@ h1 {
 }
 
 body {
-    background: rgba(19, 24, 24, 0.965);
+    background: url('images/img.jpg');
     overflow-x: hidden;
 }
 
 .container {
     background-color: $bg-color;
+    width: 80%;
     height: 500px;
     padding: 40px auto;
-    margin-bottom: 30px;
+    margin:0 auto 30px;
     border-radius: 20px;
     p {
         margin: 20px;
