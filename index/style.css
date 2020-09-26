@@ -43,9 +43,9 @@ body {
   content: '';
   text-align: center;
   top: 143px;
-  left: 186px;
+  left: 187px;
   height: 100%;
-  width: 100%;
+  width: 101%;
   z-index: 1;
   background-color: pink; }
 
@@ -122,5 +122,31 @@ body {
     margin-left: -150px;
     background-color: #aa48eb;
     transform: skewX(-45deg); }
+
+.trf {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  margin: 150px auto 0; }
+  .trf:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 150px;
+    background-color: red;
+    border-radius: 50%; }
+  .trf:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: -109px;
+    left: 75px;
+    background-color: red;
+    border-radius: 50%; }
 
 /*# sourceMappingURL=style.css.map */
