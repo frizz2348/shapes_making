@@ -3,23 +3,40 @@
     padding: 0;
 }
 
+$font-weights: 700;
+$text-size: 25px;
+$text-color: white;
+
 h1 {
     text-align: center;
     color: red;
 }
 
 body {
-    background: rgba(109, 191, 223, 0.335);
+    background: rgba(253, 255, 255, 0.965);
 }
 
-.row {
+.container {
+    background-color: black;
+    height: 500px;
+    padding: 40px auto;
+    margin-bottom: 30px;
+    p {
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        color: $text-color;
+        font-size: $text-size;
+    }
+}
+.box {
     height:150px;
     width: 250px;
     background-color: pink;
     margin:50px auto;
 }
 
-.sd1 {
+.sp {
     border: 1px solid red;
     height: 150px;
     width: 250px;
@@ -27,10 +44,11 @@ body {
     position: relative;
 }
 
-.sd1 {
+.sp {
     &:before {
         position: absolute;
         content: '';
+        text-align: center;
         top: 149px;
         left: 186px;
         height: 100%;
@@ -42,7 +60,7 @@ body {
 }
 
 
-.sd2 {
+.sp2 {
     border: 3px solid green;
     height: 145px;
     width: 247px;
@@ -52,7 +70,7 @@ body {
     background-color: lawngreen;
 }
 
-.sd3 {
+.sp3 {
     border: 3px solid green;
     height: 145px;
     width: 250px;
