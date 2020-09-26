@@ -6,6 +6,7 @@
 $font-weights: 700;
 $text-size: 25px;
 $text-color: white;
+$bg-color: rgb(12, 24, 36);
 
 h1 {
     text-align: center;
@@ -17,10 +18,11 @@ body {
 }
 
 .container {
-    background-color: black;
+    background-color: $bg-color;
     height: 500px;
     padding: 40px auto;
     margin-bottom: 30px;
+    border-radius: 20px;
     p {
         margin: 20px;
         padding: 10px;
@@ -36,7 +38,7 @@ body {
     margin:50px auto;
 }
 
-.sp {
+.bx1 {
     border: 1px solid red;
     height: 150px;
     width: 250px;
@@ -44,7 +46,7 @@ body {
     position: relative;
 }
 
-.sp {
+.bx1 {
     &:before {
         position: absolute;
         content: '';
@@ -60,7 +62,7 @@ body {
 }
 
 
-.sp2 {
+.bx2 {
     border: 3px solid green;
     height: 145px;
     width: 247px;
@@ -70,7 +72,7 @@ body {
     background-color: lawngreen;
 }
 
-.sp3 {
+.bx3 {
     border: 3px solid green;
     height: 145px;
     width: 250px;
@@ -78,4 +80,49 @@ body {
     margin-left: 93px;
     transform: skewX(51deg);
     background-color: lawngreen;
+}
+
+.triangle {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+
+.tr1 {
+        background-color: rgb(18, 236, 218);
+        height: 300px;
+        width: 300px;
+        transform: skewX(-45deg);
+        position: relative;
+        &:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            margin-left: 151px;
+            background-color: $bg-color;
+            transform: skewX(45deg);
+        }
+}
+
+.tr2 {
+    background-color: rgb(18, 236, 218);
+    height: 300px;
+    width: 300px;
+    transform: skewX(45deg);
+    margin-top: -300px;
+    position: relative;
+    &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        margin-left: -295px;
+        background-color: #0c1824;
+        transform: skewX(-63deg);
+    }
 }

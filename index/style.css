@@ -10,10 +10,11 @@ body {
   background: rgba(253, 255, 255, 0.965); }
 
 .container {
-  background-color: black;
+  background-color: #0c1824;
   height: 500px;
   padding: 40px auto;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  border-radius: 20px; }
   .container p {
     margin: 20px;
     padding: 10px;
@@ -27,14 +28,14 @@ body {
   background-color: pink;
   margin: 50px auto; }
 
-.sp {
+.bx1 {
   border: 1px solid red;
   height: 150px;
   width: 250px;
   margin: 100px auto;
   position: relative; }
 
-.sp:before {
+.bx1:before {
   position: absolute;
   content: '';
   text-align: center;
@@ -46,7 +47,7 @@ body {
   z-index: 1;
   background-color: pink; }
 
-.sp2 {
+.bx2 {
   border: 3px solid green;
   height: 145px;
   width: 247px;
@@ -55,7 +56,7 @@ body {
   transform: skewX(51deg);
   background-color: lawngreen; }
 
-.sp3 {
+.bx3 {
   border: 3px solid green;
   height: 145px;
   width: 250px;
@@ -63,5 +64,45 @@ body {
   margin-left: 93px;
   transform: skewX(51deg);
   background-color: lawngreen; }
+
+.triangle {
+  height: 300px;
+  width: 300px;
+  margin: auto; }
+
+.tr1 {
+  background-color: #12ecda;
+  height: 300px;
+  width: 300px;
+  transform: skewX(-45deg);
+  position: relative; }
+  .tr1:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin-left: 151px;
+    background-color: #0c1824;
+    transform: skewX(45deg); }
+
+.tr2 {
+  background-color: #12ecda;
+  height: 300px;
+  width: 300px;
+  transform: skewX(45deg);
+  margin-top: -300px;
+  position: relative; }
+  .tr2:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin-left: -295px;
+    background-color: #0c1824;
+    transform: skewX(-63deg); }
 
 /*# sourceMappingURL=style.css.map */
