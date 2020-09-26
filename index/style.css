@@ -65,18 +65,18 @@ body {
   transform: skewX(51deg);
   background-color: lawngreen; }
 
-.triangle {
+.triangle, .right {
   height: 300px;
   width: 300px;
   margin: auto; }
 
-.tr1 {
+.tr1, .rt1 {
   background-color: #12ecda;
   height: 300px;
   width: 300px;
   transform: skewX(-45deg);
   position: relative; }
-  .tr1:before {
+  .tr1:before, .rt1:before {
     position: absolute;
     content: '';
     left: 0;
@@ -87,14 +87,14 @@ body {
     background-color: #0c1824;
     transform: skewX(45deg); }
 
-.tr2 {
+.tr2, .rt2 {
   background-color: #12ecda;
   height: 300px;
   width: 300px;
   transform: skewX(45deg);
   margin-top: -300px;
   position: relative; }
-  .tr2:after {
+  .tr2:after, .rt2:after {
     position: absolute;
     content: '';
     left: 0;
@@ -104,5 +104,23 @@ body {
     margin-left: -295px;
     background-color: #0c1824;
     transform: skewX(-63deg); }
+
+.rt2 {
+  background-color: #12ecda;
+  height: 300px;
+  width: 300px;
+  transform: skewX(45deg);
+  margin-top: -300px;
+  position: relative; }
+  .rt2:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin-left: -150px;
+    background-color: #0c1824;
+    transform: skewX(-45deg); }
 
 /*# sourceMappingURL=style.css.map */

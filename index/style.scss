@@ -82,13 +82,13 @@ body {
     background-color: lawngreen;
 }
 
-.triangle {
+.triangle, .right {
     height: 300px;
     width: 300px;
     margin: auto;
 }
 
-.tr1 {
+.tr1, .rt1{
         background-color: rgb(18, 236, 218);
         height: 300px;
         width: 300px;
@@ -107,7 +107,7 @@ body {
         }
 }
 
-.tr2 {
+.tr2, .rt2{
     background-color: rgb(18, 236, 218);
     height: 300px;
     width: 300px;
@@ -124,5 +124,26 @@ body {
         margin-left: -295px;
         background-color: #0c1824;
         transform: skewX(-63deg);
+    }
+}
+
+
+.rt2{
+    background-color: rgb(18, 236, 218);
+    height: 300px;
+    width: 300px;
+    transform: skewX(45deg);
+    margin-top: -300px;
+    position: relative;
+    &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        margin-left: -150px;
+        background-color: $bg-color;
+        transform: skewX(-45deg);
     }
 }
