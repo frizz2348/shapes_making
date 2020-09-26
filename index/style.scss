@@ -6,7 +6,7 @@
 $font-weights: 700;
 $text-size: 25px;
 $text-color: white;
-$bg-color: rgb(12, 24, 36);
+$bg-color: rgb(170, 72, 235);
 
 h1 {
     text-align: center;
@@ -14,7 +14,8 @@ h1 {
 }
 
 body {
-    background: rgba(253, 255, 255, 0.965);
+    background: rgba(19, 24, 24, 0.965);
+    overflow-x: hidden;
 }
 
 .container {
@@ -31,7 +32,11 @@ body {
         font-size: $text-size;
     }
 }
+
 .box {
+    margin-left: -165px;
+}
+.box4 {
     height:150px;
     width: 250px;
     background-color: pink;
@@ -39,10 +44,9 @@ body {
 }
 
 .bx1 {
-    border: 1px solid red;
     height: 150px;
     width: 250px;
-    margin: 100px auto;
+    margin: 96px auto;
     position: relative;
 }
 
@@ -51,33 +55,31 @@ body {
         position: absolute;
         content: '';
         text-align: center;
-        top: 149px;
+        top: 143px;
         left: 186px;
         height: 100%;
         width: 100%;
-        border: 1px solid red;
         z-index: 1;
         background-color: pink;
     }
+    
 }
 
 
 .bx2 {
-    border: 3px solid green;
     height: 145px;
     width: 247px;
-    margin-top: -253px;
-    margin-left: 93px;
-    transform: skewX(51deg);
+    margin-top: -246px;
+    margin-left: 96px;
+    transform: skewX(53deg);
     background-color: lawngreen;
 }
 
 .bx3 {
-    border: 3px solid green;
     height: 145px;
     width: 250px;
     margin-top: 2px;
-    margin-left: 93px;
+    margin-left: 91px;
     transform: skewX(51deg);
     background-color: lawngreen;
 }
@@ -122,14 +124,13 @@ body {
         height: 100%;
         width: 100%;
         margin-left: -295px;
-        background-color: #0c1824;
+        background-color: $bg-color;
         transform: skewX(-63deg);
     }
 }
 
-
 .rt2{
-    background-color: rgb(18, 236, 218);
+    background-color: rgb(236, 51, 18);
     height: 300px;
     width: 300px;
     transform: skewX(45deg);
